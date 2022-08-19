@@ -13,7 +13,7 @@ The design you need to copy is made in Figma. [Here is the link](https://www.fig
 This repo is a simple foundation for the trial project:
 
 -   React structure is in place;
--   Firebase configurations are implemented in `firebase.config.js` and imported into the app. You can import global Firestore variable by `import { db } from '../firebase.config';` within a module;
+-   Firebase configurations are implemented in `firebase.config.js` and imported into the app. You'll need to change API keys there though. You can import global Firestore variable by `import { db } from '../firebase.config';` within a module;
 -   `index.js` and `App.js` got all required components imported;
 -   There are also some simple SCSS helpers. Check `src\scss\styles.scss` file and `src\scss\modules` folder.
 
@@ -35,8 +35,10 @@ That's in case you aren't familiar with Firebase. You should already have an acc
 
 1. Pull the git repo to your local computer;
 2. Install npm modules;
-3. Build the layout using prebuild components `src\components\Header.jsx`, `src\components\List.jsx`, `src\components\Input.jsx` and scss files in `src\scss` folder. You can add additional JSX/JS components or SCSS/CSS modules if you want;
-4. In `Input.jsx` create `addItem` function that will add new document in `items` collection;
-5. In `List.jsx` use `useEffect` to fetch real-time documents data and display results sorted by time it was created (latest first);
-6. Implement the option to mark a task item as completed and update its status in Firestore. Ideally, push all completed tasks to the end of the list. And do the opposite for incompleted ones;
-7. Set up a new repo on your Github account (or use any other hosting services to share your code) and send a link back to us.
+3. Go to **Firebase Console** -> **Project Settings** -> scroll to the bottom and grab `firebaseConfig` variable and replace with it the one you have in `firebase.config.js` file.
+   ![alt text](https://github.com/GoWP/trial-project/blob/master/github/FirebaseConfig.JPG?raw=true)
+4. Build the layout using prebuild components `src\components\Header.jsx`, `src\components\List.jsx`, `src\components\Input.jsx` and scss files in `src\scss` folder. You can add additional JSX/JS components or SCSS/CSS modules if you want;
+5. In `Input.jsx` create `addItem` function that will add new document in `items` collection;
+6. In `List.jsx` use `useEffect` to fetch real-time documents data and display results sorted by time it was created (latest first);
+7. Implement the option to mark a task item as completed and update its status in Firestore. Ideally, push all completed tasks to the end of the list. And do the opposite for incompleted ones;
+8. Set up a new repo on your Github account (or use any other hosting services to share your code) and send a link back to us.
