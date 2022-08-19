@@ -36,7 +36,7 @@ That's in case you aren't familiar with Firebase. You should already have an acc
 1. Pull the git repo to your local computer;
 2. Install npm modules;
 3. Go to **Firebase Console** -> **Project Settings** -> scroll to the bottom and grab `firebaseConfig` variable and replace with it the one you have in `firebase.config.js` file.
-   ![alt text](https://github.com/GoWP/trial-project/blob/master/github/FirebaseConfig.JPG?raw=true)
+   ![alt text](https://github.com/GoWP/trial-project/blob/master/github/FirebaseConfig.jpg?raw=true)
 4. Build the layout using prebuild components `src\components\Header.jsx`, `src\components\List.jsx`, `src\components\Input.jsx` and scss files in `src\scss` folder. You can add additional JSX/JS components or SCSS/CSS modules if you want;
 5. In `Input.jsx` create `addItem` function that will add new document in `items` collection;
 6. In `List.jsx` use `useEffect` to fetch real-time documents data and display results sorted by time it was created (latest first);
