@@ -23,6 +23,8 @@ Ideally, you need to work only with `components` and `scss` folders but you can 
 
 That's in case you aren't familiar with Firebase. You should already have an access to a Firebase application. The only thing you need to manage there is **Firestore Database** and **Data** tab within it.
 
+![alt text](https://github.com/GoWP/trial-project/blob/master/github/FirebaseFirestore.JPG?raw=true)
+
 -   Data structure in Firestore: [Link](https://firebase.google.com/docs/firestore/data-model)
 -   How to add documents to Firestore: [Link](https://firebase.google.com/docs/firestore/manage-data/add-data?hl=en&authuser=0#add_a_document)
 -   How to fetch real-time data of all documents from one specific collection: [Link](https://firebase.google.com/docs/firestore/query-data/listen?hl=en&authuser=0#listen_to_multiple_documents_in_a_collection)
